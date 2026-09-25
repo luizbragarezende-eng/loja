@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Categorias | Prof. Luiz Atividades Pedagógicas</title>
+<meta name="description" content="Encontre atividades para imprimir por assunto, tipo de recurso, ano e data comemorativa: alfabetização, matemática, inclusão, jogos e mais.">
+<meta name="theme-color" content="#ff8a65">
+
+<!-- ENDEREÇO DO SITE (veja o COMO-PUBLICAR.md) -->
+<link rel="canonical" href="https://luizbragarezende-eng.github.io/loja/categorias.html">
+<meta property="og:url" content="https://luizbragarezende-eng.github.io/loja/categorias.html">
+<meta property="og:image" content="https://luizbragarezende-eng.github.io/loja/img/og.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Prof. Luiz Atividades Pedagógicas">
+<meta property="og:title" content="Categorias | Prof. Luiz Atividades Pedagógicas">
+<meta property="og:description" content="Atividades para imprimir organizadas por assunto, tipo de recurso, ano e data comemorativa.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="produtos.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-pagina="categorias">
+
+<header id="topo" class="topo"></header>
+
+<main>
+  <div class="container">
+    <div class="pagina-cab">
+      <nav class="migalhas" aria-label="Você está em"><a href="index.html">Início</a><span>/</span><b>Categorias</b></nav>
+      <h1>Categorias</h1>
+      <p class="pagina-sub">Escolha um assunto para ver os materiais. O número mostra quantos materiais há em cada um.</p>
+      <div class="busca busca-cat">
+        <label class="sr" for="busca-cat">Buscar categoria</label>
+        <input id="busca-cat" type="search" placeholder="Buscar categoria: ex. bingo, sistema monetário..." autocomplete="off">
+        <span><svg class="ic" aria-hidden="true"><use href="#i-busca"/></svg></span>
+      </div>
+    </div>
+
+    <section class="bloco-cat" id="assuntos" aria-labelledby="t-assuntos">
+      <h2 class="sr" id="t-assuntos">Por assunto</h2>
+      <div class="grade-cat" id="lista-categorias"></div>
+      <p class="vazio" id="cat-vazio" hidden>Nenhuma categoria com esse nome. <a href="loja.html">Buscar na loja</a></p>
+    </section>
+
+    <section class="bloco-cat" id="recursos">
+      <h2>Por tipo de recurso</h2>
+      <div class="grade-tiles" id="lista-recursos"></div>
+    </section>
+
+    <section class="bloco-cat" id="anos">
+      <h2>Por ano / etapa</h2>
+      <div class="chips-linha" id="lista-anos"></div>
+    </section>
+
+    <section class="bloco-cat" id="datas">
+      <h2>Datas comemorativas</h2>
+      <div class="chips-linha" id="lista-datas"></div>
+    </section>
+  </div>
+</main>
+
+<footer id="rodape" class="rodape"></footer>
+
+</body>
+</html>

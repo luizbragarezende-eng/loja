@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loja | Prof. Luiz Atividades Pedagógicas</title>
+<meta name="description" content="Todos os materiais do Prof. Luiz: atividades em PDF para imprimir, com busca e filtros por assunto, tipo de recurso, ano e data comemorativa.">
+<meta name="theme-color" content="#ff8a65">
+
+<!-- ENDEREÇO DO SITE (veja o COMO-PUBLICAR.md) -->
+<link rel="canonical" href="https://luizbragarezende-eng.github.io/loja/loja.html">
+<meta property="og:url" content="https://luizbragarezende-eng.github.io/loja/loja.html">
+<meta property="og:image" content="https://luizbragarezende-eng.github.io/loja/img/og.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Prof. Luiz Atividades Pedagógicas">
+<meta property="og:title" content="Loja | Prof. Luiz Atividades Pedagógicas">
+<meta property="og:description" content="Atividades e simulados em PDF para imprimir, da Educação Infantil ao Ensino Médio. Busque por assunto, ano e data comemorativa.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="produtos.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-pagina="loja">
+
+<header id="topo" class="topo"></header>
+
+<main class="loja">
+  <div class="container">
+    <div class="pagina-cab">
+      <nav class="migalhas" aria-label="Você está em"><a href="index.html">Início</a><span>/</span><b>Loja</b></nav>
+      <h1 id="loja-titulo">Todos os materiais</h1>
+    </div>
+    <div class="loja-grade">
+      <aside class="filtros" id="filtros" aria-label="Filtros"></aside>
+      <section aria-label="Resultados">
+        <div class="barra-resultados">
+          <button type="button" class="btn btn-contorno bt-filtros" id="bt-filtros" aria-controls="filtros" aria-expanded="false">
+            <svg class="ic" aria-hidden="true"><use href="#i-filtro"/></svg>Filtros <span id="n-filtros"></span>
+          </button>
+          <span id="contagem" class="contagem-res" aria-live="polite"></span>
+          <label class="ordenar"><span>Ordenar por</span>
+            <select id="ordem">
+              <option value="relevancia">Relevância</option>
+              <option value="novidades">Novidades</option>
+              <option value="menor-preco">Menor preço</option>
+              <option value="maior-preco">Maior preço</option>
+            </select>
+          </label>
+        </div>
+        <div class="chips-ativos" id="chips-ativos"></div>
+        <div class="grade-produtos g3" id="resultados"></div>
+        <noscript><p>Para ver os materiais, ative o JavaScript do navegador.</p></noscript>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer id="rodape" class="rodape"></footer>
+
+</body>
+</html>
