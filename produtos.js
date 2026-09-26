@@ -163,6 +163,7 @@ window.PRODUTOS = [
       "Sondagem de escrita com orientações e ficha de acompanhamento da turma",
       "Certificado de pequeno leitor e gabarito completo"
     ],
+    amostra: "amostras/kit-familias-silabicas.pdf",
     link_kiwify: "https://pay.kiwify.com.br/OP8FteN",
     destaque: true,
     novo: false
@@ -189,6 +190,7 @@ window.PRODUTOS = [
       "Caça-palavras, página para colorir, desenho e escrita",
       "Certificado e gabarito"
     ],
+    amostra: "amostras/kit-dia-das-criancas.pdf",
     link_kiwify: "https://pay.kiwify.com.br/6tMxjub",
     destaque: false,
     novo: false
@@ -215,6 +217,7 @@ window.PRODUTOS = [
       "Carta para os alunos escreverem",
       "Painel de bandeirolas FELIZ DIA DO PROFESSOR"
     ],
+    amostra: "amostras/kit-dia-do-professor.pdf",
     link_kiwify: "https://pay.kiwify.com.br/FefvCTM",
     destaque: false,
     novo: false
@@ -239,6 +242,7 @@ window.PRODUTOS = [
       "12 tags e 4 cartões de Natal",
       "Caça-palavras, página para colorir e gabarito"
     ],
+    amostra: "amostras/kit-fim-de-ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/YzR1FS1",
     destaque: false,
     novo: false
@@ -265,6 +269,7 @@ window.PRODUTOS = [
       "Mural com 12 faixas coloridas",
       "Página para colorir e gabarito"
     ],
+    amostra: "amostras/kit-consciencia-negra.pdf",
     link_kiwify: "https://pay.kiwify.com.br/yrdgo6k",
     destaque: false,
     novo: false
@@ -292,6 +297,7 @@ window.PRODUTOS = [
       "Bandeirolas BEM-VINDOS para a porta",
       "Caça-palavras e gabarito"
     ],
+    amostra: "amostras/kit-volta-as-aulas.pdf",
     link_kiwify: "https://pay.kiwify.com.br/Eday2PZ",
     destaque: false,
     novo: false
@@ -317,6 +323,7 @@ window.PRODUTOS = [
       "Crie seu personagem",
       "Página para colorir e gabarito"
     ],
+    amostra: "amostras/kit-folclore-saci-halloween.pdf",
     link_kiwify: "https://pay.kiwify.com.br/8UEVf5D",
     destaque: false,
     novo: false
@@ -343,6 +350,7 @@ window.PRODUTOS = [
       "Sílabas para montar palavras",
       "Gabarito e ficha de acompanhamento do aluno"
     ],
+    amostra: "amostras/kit-alfabetizacao-adaptada.pdf",
     link_kiwify: "https://pay.kiwify.com.br/XpUK8TS",
     destaque: true,
     novo: true
@@ -367,6 +375,7 @@ window.PRODUTOS = [
       "Sondagem com orientações",
       "Certificado e gabarito"
     ],
+    amostra: "amostras/kit-silabas-complexas.pdf",
     link_kiwify: "https://pay.kiwify.com.br/YqBiUkh",
     destaque: true,
     novo: true
@@ -394,6 +403,7 @@ window.PRODUTOS = [
       "Bingo dos números com 12 cartelas",
       "Gabarito"
     ],
+    amostra: "amostras/kit-matematica-1-ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/fdHGprT",
     destaque: true,
     novo: true
@@ -421,7 +431,8 @@ window.PRODUTOS = [
       "Ficha de leitura para qualquer livro",
       "Gabarito"
     ],
-    link_kiwify: "",
+    amostra: "amostras/kit-leitura-e-interpretacao.pdf",
+    link_kiwify: "https://pay.kiwify.com.br/27BxiMZ",
     destaque: false,
     novo: true
   },
@@ -447,6 +458,7 @@ window.PRODUTOS = [
       "Leitura, caça-palavras e página para colorir",
       "Gabarito"
     ],
+    amostra: "amostras/kit-dia-dos-animais.pdf",
     link_kiwify: "https://pay.kiwify.com.br/THYNVPM",
     destaque: true,
     novo: true
@@ -471,6 +483,7 @@ window.PRODUTOS = [
       "Bandeirolas “É DIA DE BRINCAR!”",
       "Página para colar a foto da turma"
     ],
+    amostra: "amostras/moldura-dia-das-criancas.pdf",
     link_kiwify: "https://pay.kiwify.com.br/zlq9QDz",
     destaque: false,
     novo: true
@@ -495,6 +508,7 @@ window.PRODUTOS = [
       "Chaveiros com linhas para a criança escrever",
       "Passo a passo de montagem"
     ],
+    amostra: "amostras/chaveiros-dia-do-professor.pdf",
     link_kiwify: "https://pay.kiwify.com.br/1r9ZbYD",
     destaque: false,
     novo: true
@@ -519,6 +533,7 @@ window.PRODUTOS = [
       "Leitura, contagem com problemas e caça-palavras",
       "Certificado e gabarito"
     ],
+    amostra: "amostras/kit-cabelo-maluco.pdf",
     link_kiwify: "https://pay.kiwify.com.br/oDE1yXt",
     destaque: false,
     novo: true
@@ -543,6 +558,7 @@ window.PRODUTOS = [
       "4 cartões de carinho do Outubro Rosa",
       "Gabarito"
     ],
+    amostra: "amostras/jornalzinho-outubro.pdf",
     link_kiwify: "https://pay.kiwify.com.br/zzNhLbX",
     destaque: false,
     novo: true
@@ -566,6 +582,7 @@ window.PRODUTOS = [
       "Gabarito comentado com critérios de escrita por nível",
       "Planilha da turma e síntese por descritor"
     ],
+    amostra: "amostras/simulado-simave-lp-2ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/0nQXvu1",
     destaque: false,
     novo: true
@@ -589,6 +606,7 @@ window.PRODUTOS = [
       "Gabarito comentado",
       "Planilha da turma e síntese por descritor"
     ],
+    amostra: "amostras/simulado-simave-mt-2ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/OKkiopU",
     destaque: false,
     novo: true
@@ -612,6 +630,7 @@ window.PRODUTOS = [
       "Gabarito comentado",
       "Planilha da turma por descritor"
     ],
+    amostra: "amostras/simulado-simave-lp-5ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/n7p4EuM",
     destaque: true,
     novo: true
@@ -634,6 +653,7 @@ window.PRODUTOS = [
       "Gabarito comentado com resolução e análise dos distratores",
       "Planilha da turma por descritor"
     ],
+    amostra: "amostras/simulado-simave-mt-5ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/xd4KnhJ",
     destaque: true,
     novo: true
@@ -657,6 +677,7 @@ window.PRODUTOS = [
       "Gabarito comentado",
       "Planilha da turma por descritor"
     ],
+    amostra: "amostras/simulado-simave-lp-9ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/rR6BFlg",
     destaque: false,
     novo: true
@@ -680,6 +701,7 @@ window.PRODUTOS = [
       "Gabarito comentado com resolução",
       "Planilha da turma por descritor"
     ],
+    amostra: "amostras/simulado-simave-mt-9ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/5BHVya5",
     destaque: false,
     novo: true
@@ -704,6 +726,7 @@ window.PRODUTOS = [
       "Gabarito comentado",
       "Planilha da turma e síntese por descritor"
     ],
+    amostra: "amostras/simulado-simave-lp-3em.pdf",
     link_kiwify: "https://pay.kiwify.com.br/bo44Vh8",
     destaque: false,
     novo: true
@@ -728,7 +751,108 @@ window.PRODUTOS = [
       "Gabarito comentado com resolução",
       "Planilha da turma e síntese por descritor"
     ],
+    amostra: "amostras/simulado-simave-mt-3em.pdf",
     link_kiwify: "https://pay.kiwify.com.br/pMMvq2I",
+    destaque: false,
+    novo: true
+  },
+  {
+    id: "combo-simave-escola",
+    nome: "SIMAVE Escola: 8 Simulados + Bônus",
+    tipo: "simulado",
+    assuntos: ["avaliacoes-externas", "simulado-lp", "simulado-mt", "lingua-portuguesa", "matematica"],
+    anos: ["2", "5", "9", "em"],
+    publico: "Escolas: 2º, 5º e 9º ano e 3º ano do Ensino Médio",
+    data: "avaliacao-somativa",
+    preco: 49.90,
+    paginas: 164,
+    capa: "img/produtos/combo-simave-escola/capa.jpg",
+    previas: ["img/produtos/lp-5ano/p6.jpg", "img/produtos/mt-9ano/p9.jpg", "img/produtos/lp-2ano/p6.jpg", "img/produtos/lp-5ano/p17.jpg"],
+    descricao: "Pacote para a escola com os 8 simulados no estilo SIMAVE/PROEB (Português e Matemática do 2º, 5º e 9º ano e do 3º ano do Ensino Médio), mais um Simulado 5º Ano de bônus. Uso liberado para todos os professores de uma escola. Material independente, não oficial.",
+    itens: [
+      "8 simulados: LP e MT do 2º, 5º e 9º ano e 3º EM",
+      "Bônus: Simulado 5º Ano de Português e Matemática",
+      "Questões inéditas organizadas por descritor",
+      "Gabarito comentado e planilha da turma",
+      "Uso liberado para os professores de uma escola",
+      "Economia de R$ 29,30 em relação aos avulsos"
+    ],
+    link_kiwify: "https://pay.kiwify.com.br/b0up1S0",
+    destaque: true,
+    novo: true
+  },
+  {
+    id: "kit-tabuada",
+    nome: "Kit Tabuada e Multiplicação",
+    tipo: "kit",
+    assuntos: ["matematica", "problemas", "jogos", "bingo"],
+    anos: ["3", "4", "5"],
+    data: null,
+    preco: 14.90,
+    paginas: 18,
+    capa: "img/produtos/kit-tabuada/capa.jpg",
+    previas: ["img/produtos/kit-tabuada/p3.jpg", "img/produtos/kit-tabuada/p5.jpg", "img/produtos/kit-tabuada/p8.jpg", "img/produtos/kit-tabuada/p13.jpg", "img/produtos/kit-tabuada/p14.jpg"],
+    descricao: "Tabuadas do 2 ao 10 ilustradas com truques, quadro da tabuada, roda, cruzadinha, caça-números, problemas, desafios, dominó e bingo da tabuada para recortar e certificado Mestre da Tabuada.",
+    itens: [
+      "Tabuadas do 2 ao 10 ilustradas, com truques",
+      "Quadro da tabuada completo e para completar",
+      "Roda da tabuada, cruzadinha e caça-números",
+      "Problemas e desafios de multiplicação",
+      "Dominó e bingo da tabuada para recortar",
+      "Certificado Mestre da Tabuada",
+      "Gabarito"
+    ],
+    amostra: "amostras/kit-tabuada.pdf",
+    link_kiwify: "https://pay.kiwify.com.br/mrYL0O0",
+    destaque: false,
+    novo: true
+  },
+  {
+    id: "kit-matematica-2-ano",
+    nome: "Kit Matemática 2º Ano",
+    tipo: "kit",
+    assuntos: ["matematica", "sistema-de-numeracao", "adicao-e-subtracao", "sistema-monetario", "problemas"],
+    anos: ["2"],
+    data: null,
+    preco: 14.90,
+    paginas: 17,
+    capa: "img/produtos/kit-matematica-2ano/capa.jpg",
+    previas: ["img/produtos/kit-matematica-2ano/p6.jpg", "img/produtos/kit-matematica-2ano/p11.jpg", "img/produtos/kit-matematica-2ano/p12.jpg", "img/produtos/kit-matematica-2ano/p13.jpg", "img/produtos/kit-matematica-2ano/p14.jpg"],
+    descricao: "Números até 1000 com material dourado, adição e subtração com e sem reagrupamento, problemas, dobro e metade, ideia de multiplicação, relógio, dinheiro e troco, tabela e gráfico.",
+    itens: [
+      "Números até 1000 com material dourado",
+      "48 contas armadas com e sem reagrupamento",
+      "Problemas de adição e subtração",
+      "Dobro, metade e ideia de multiplicação",
+      "Relógio, dinheiro e troco",
+      "Tabela e gráfico",
+      "Gabarito completo"
+    ],
+    amostra: "amostras/kit-matematica-2-ano.pdf",
+    link_kiwify: "https://pay.kiwify.com.br/CIjmigO",
+    destaque: false,
+    novo: true
+  },
+  {
+    id: "mapas-mentais-lingua-portuguesa",
+    nome: "Mapas Mentais de Língua Portuguesa",
+    tipo: "explicativo",
+    assuntos: ["lingua-portuguesa", "gramatica", "painel-mural"],
+    anos: ["3", "4", "5"],
+    data: null,
+    preco: 9.90,
+    paginas: 17,
+    capa: "img/produtos/prod-mapas-mentais-portugues/capa.jpg",
+    previas: ["img/produtos/prod-mapas-mentais-portugues/p3.jpg", "img/produtos/prod-mapas-mentais-portugues/p5.jpg", "img/produtos/prod-mapas-mentais-portugues/p8.jpg", "img/produtos/prod-mapas-mentais-portugues/p9.jpg", "img/produtos/prod-mapas-mentais-portugues/p15.jpg"],
+    descricao: "10 mapas mentais coloridos para cartaz (substantivo, adjetivo, verbo, artigo, pronome, pontuação, sílaba tônica, tipos de frase, sinônimo e antônimo, singular e plural) e resumos em preto e branco para colar no caderno.",
+    itens: [
+      "10 mapas mentais coloridos, um por tema",
+      "10 resumos em preto e branco para colorir",
+      "Ótimo como cartaz na sala",
+      "Para o 3º, 4º e 5º ano"
+    ],
+    amostra: "amostras/mapas-mentais-lingua-portuguesa.pdf",
+    link_kiwify: "https://pay.kiwify.com.br/DHAgE9p",
     destaque: false,
     novo: true
   }

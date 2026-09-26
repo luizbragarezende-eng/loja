@@ -298,6 +298,19 @@
 
   /* ================= Página inicial ================= */
   function paginaInicio() {
+    var fx = $('#faixa-somativa'), cb = porId['combo-simave-escola'];
+    var ini = new Date(2026, 9, 19), fim = new Date(2026, 9, 30);
+    if (fx && cb && HOJE <= fim) {
+      var n = dias(HOJE, ini);
+      fx.innerHTML = '<div class="faixa-somativa">' +
+        '<div class="fs-texto"><span class="fs-etq">' + ic('calendario') + (n > 0 ? 'Faltam ' + plural(n, 'dia', 'dias') + ' para a Avaliação Somativa' : 'Avaliação Somativa acontecendo') + ' (19 a 30/10)</span>' +
+        '<h2>Simulados no estilo SIMAVE com gabarito comentado</h2>' +
+        '<p>Português e Matemática do 2º, 5º e 9º ano e do 3º ano do Ensino Médio, com questões por descritor e planilha da turma. Material independente, não oficial.</p>' +
+        '<div class="fs-botoes"><a class="btn btn-comprar" href="produto.html?id=combo-simave-escola">' + ic('sacola') + 'Pacote para a escola: ' + preco(cb.preco) + '</a>' +
+        '<a class="btn btn-contorno" href="' + linkLoja('assunto', 'avaliacoes-externas') + '">Ver simulados avulsos</a></div></div>' +
+        '<a class="fs-capa" href="produto.html?id=combo-simave-escola"><img src="' + esc(cb.capa) + '" alt="Pacote SIMAVE Escola" loading="lazy"></a></div>';
+      $('#sec-somativa').hidden = false;
+    }
     // Atalhos de assunto no topo
     var chips = $('#atalhos');
     if (chips) {
@@ -636,7 +649,9 @@
             (pr ? '<span class="preco preco-g">' + pr + '</span>' : '<span class="preco-info">Veja o preço na página de compra</span>') +
             (infoDt ? '<span class="contagem">' + ic('relogio') + esc(contagem(infoDt)) + (infoDt.d.dia ? ' para ' + esc(infoDt.d.quando) : '') + '</span>' : '') +
           '</div>' +
-          (temLink(p) ? '<a class="btn btn-comprar btn-grande btn-bloco" href="' + esc(p.link_kiwify) + '">' + ic('sacola') + 'Comprar na Kiwify</a>'
+          (temLink(p) ? '<a class="btn btn-comprar btn-grande btn-bloco" href="' + esc(p.link_kiwify) + '">' + ic('sacola') + 'Comprar na Kiwify</a>' +
+              (p.amostra ? '<a class="btn btn-contorno btn-grande btn-bloco btn-amostra" href="' + esc(p.amostra) + '" target="_blank" rel="noopener">' + ic('pagina') + 'Baixar amostra grátis (PDF)</a>' : '') +
+              (p._assuntos['avaliacoes-externas'] && p.id !== 'combo-simave-escola' && porId['combo-simave-escola'] ? '<a class="upsell" href="produto.html?id=combo-simave-escola"><b>Vai aplicar na escola toda?</b> O pacote <u>SIMAVE Escola</u> traz os 8 simulados + bônus por ' + preco(porId['combo-simave-escola'].preco) + ', com uso liberado para os professores da escola.</a>' : '')
             : '<p class="aviso-breve">Este material chega à loja nos próximos dias. Entre no Canal do WhatsApp para ser avisado(a) no lançamento.</p>' +
               '<a class="btn btn-whats btn-grande btn-bloco" href="' + esc(L.contatos.canalWhatsApp) + '" target="_blank" rel="noopener">' + ic('whatsapp') + 'Avise-me no Canal do WhatsApp</a>') +
           '<ul class="garantias">' +
