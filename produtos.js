@@ -425,7 +425,7 @@ window.PRODUTOS = [
     destaque: false,
     novo: true
   },
-  /* ---- NOVOS (set/2026): aparecem como "Em breve" até receberem o link da Kiwify ---- */
+  /* ---- NOVOS (set/2026) ---- */
   {
     id: "kit-dia-dos-animais",
     nome: "Kit Dia dos Animais",
@@ -447,8 +447,7 @@ window.PRODUTOS = [
       "Leitura, caça-palavras e página para colorir",
       "Gabarito"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/THYNVPM",
     destaque: true,
     novo: true
   },
@@ -472,8 +471,7 @@ window.PRODUTOS = [
       "Bandeirolas “É DIA DE BRINCAR!”",
       "Página para colar a foto da turma"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/zlq9QDz",
     destaque: false,
     novo: true
   },
@@ -497,8 +495,7 @@ window.PRODUTOS = [
       "Chaveiros com linhas para a criança escrever",
       "Passo a passo de montagem"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/1r9ZbYD",
     destaque: false,
     novo: true
   },
@@ -522,8 +519,7 @@ window.PRODUTOS = [
       "Leitura, contagem com problemas e caça-palavras",
       "Certificado e gabarito"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/oDE1yXt",
     destaque: false,
     novo: true
   },
@@ -547,8 +543,7 @@ window.PRODUTOS = [
       "4 cartões de carinho do Outubro Rosa",
       "Gabarito"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/zzNhLbX",
     destaque: false,
     novo: true
   },
@@ -571,8 +566,7 @@ window.PRODUTOS = [
       "Gabarito comentado com critérios de escrita por nível",
       "Planilha da turma e síntese por descritor"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/0nQXvu1",
     destaque: false,
     novo: true
   },
@@ -595,8 +589,7 @@ window.PRODUTOS = [
       "Gabarito comentado",
       "Planilha da turma e síntese por descritor"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/OKkiopU",
     destaque: false,
     novo: true
   },
@@ -619,8 +612,7 @@ window.PRODUTOS = [
       "Gabarito comentado",
       "Planilha da turma por descritor"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/n7p4EuM",
     destaque: true,
     novo: true
   },
@@ -642,8 +634,7 @@ window.PRODUTOS = [
       "Gabarito comentado com resolução e análise dos distratores",
       "Planilha da turma por descritor"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/xd4KnhJ",
     destaque: true,
     novo: true
   },
@@ -666,8 +657,7 @@ window.PRODUTOS = [
       "Gabarito comentado",
       "Planilha da turma por descritor"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/rR6BFlg",
     destaque: false,
     novo: true
   },
@@ -690,8 +680,7 @@ window.PRODUTOS = [
       "Gabarito comentado com resolução",
       "Planilha da turma por descritor"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/5BHVya5",
     destaque: false,
     novo: true
   },
@@ -715,8 +704,7 @@ window.PRODUTOS = [
       "Gabarito comentado",
       "Planilha da turma e síntese por descritor"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/bo44Vh8",
     destaque: false,
     novo: true
   },
@@ -740,8 +728,7 @@ window.PRODUTOS = [
       "Gabarito comentado com resolução",
       "Planilha da turma e síntese por descritor"
     ],
-    link_kiwify: "",
-    em_breve: true,
+    link_kiwify: "https://pay.kiwify.com.br/pMMvq2I",
     destaque: false,
     novo: true
   }
