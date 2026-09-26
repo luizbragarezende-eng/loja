@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luizbragarezende-eng.github.io/loja/sitemap.xml
