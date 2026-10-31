@@ -892,8 +892,8 @@ window.PRODUTOS = [
           "Gabarito"
       ],
       "amostra": "amostras/kit-revolucao-francesa.pdf",
-      "link_kiwify": "",
-      "em_breve": true,
+      "link_kiwify": "https://pay.kiwify.com.br/TB6o1bq",
+      "em_breve": false,
       "destaque": false,
       "novo": true
   },
@@ -928,8 +928,8 @@ window.PRODUTOS = [
           "Questões de reflexão e gabarito"
       ],
       "amostra": "amostras/kit-filosofia-antiga.pdf",
-      "link_kiwify": "",
-      "em_breve": true,
+      "link_kiwify": "https://pay.kiwify.com.br/SiaP8tD",
+      "em_breve": false,
       "destaque": false,
       "novo": true
   }
