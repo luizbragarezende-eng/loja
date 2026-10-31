@@ -283,6 +283,7 @@
         '<h3><a href="' + url + '">' + esc(p.nome) + '</a></h3>' +
         '<span class="card-anos">' + esc(anosTexto(p)) + '</span>' +
         (largo ? '<ul class="card-itens">' + (p.itens || []).slice(0, 5).map(function (i) { return '<li>' + ic('check') + esc(i) + '</li>'; }).join('') + '</ul>' : '') +
+        (p.amostra ? '<a class="card-amostra" href="' + esc(p.amostra) + '" target="_blank" rel="noopener">Ver amostra grátis</a>' : '') +
         '<div class="card-rodape">' +
           (pr ? '<span class="preco">' + pr + '</span>' : '<span class="preco-info">Veja o preço</span>') +
           '<div class="card-botoes">' +
@@ -311,6 +312,20 @@
         '<a class="fs-capa" href="produto.html?id=combo-simave-escola"><img src="' + esc(cb.capa) + '" alt="Pacote SIMAVE Escola" loading="lazy"></a></div>';
       $('#sec-somativa').hidden = false;
     }
+    // Campanha do momento no primeiro bloco
+    if (AGORA.length) {
+      var cp = AGORA[0], kit = produtosDaData(cp.d.id)[0];
+      if (kit) {
+        var pgAmostra = kit.id === 'kit-consciencia-negra' ? 'amostra-consciencia-negra/' : 'produto.html?id=' + encodeURIComponent(kit.id);
+        $('#campanha-rotulo').textContent = contagem(cp);
+        $('#campanha-nome').textContent = kit.nome;
+        $('#campanha-amostra').href = pgAmostra;
+        $('#campanha-kit').href = 'produto.html?id=' + encodeURIComponent(kit.id);
+        $('#campanha-kit').textContent = 'Ver o kit' + (kit.preco ? ': ' + preco(kit.preco) : '');
+        (kit.previas || []).slice(0, 3).forEach(function (src, i) { $('#lq' + (i + 1)).src = src; });
+      }
+    }
+
     // Atalhos de assunto no topo
     var chips = $('#atalhos');
     if (chips) {

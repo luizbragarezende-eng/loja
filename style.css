@@ -544,3 +544,20 @@ svg.ic { width: 1.1em; height: 1.1em; flex: none; }
   .fs-capa { order: -1; }
   .fs-botoes .btn { flex: 1 1 100%; justify-content: center; }
 }
+
+
+/* Rascunho: campanha no primeiro bloco */
+.campanha { margin-top: 20px; padding: 18px; background: #fff; border: 1px solid var(--linha); border-radius: 16px; box-shadow: 0 10px 26px rgba(0,0,0,.08); max-width: 560px; }
+.campanha-rotulo { display: block; color: #c62828; font-family: var(--titulo); font-weight: 600; font-size: 15px; }
+.campanha strong { display: block; font-family: var(--titulo); font-size: 24px; line-height: 1.15; margin: 4px 0 12px; }
+.campanha-botoes { display: flex; flex-wrap: wrap; gap: 10px; }
+.campanha-botoes .btn { flex: 1 1 200px; justify-content: center; text-align: center; }
+.card-amostra { font-size: 15px; font-weight: 700; color: #1565c0; margin-top: 2px; }
+.card-amostra:hover { text-decoration: underline; }
+@media (max-width: 900px) { .leque { max-width: 420px; margin: 0 auto; } }
+.abertura .sub { display: block; position: static; background: none; border: 0; box-shadow: none; padding: 0; min-width: 0; width: auto; }
+@media (max-width: 960px) {
+  .abertura .leque { display: block; height: 300px; width: 100%; margin-top: 8px; }
+  .abertura .atalhos { display: none; }
+  .kicker { font-size: 13px; }
+}
