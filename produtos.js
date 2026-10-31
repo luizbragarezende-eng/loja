@@ -58,6 +58,9 @@ window.LOJA = {
     { id: "3",   nome: "3º ano", curto: "3º" },
     { id: "4",   nome: "4º ano", curto: "4º" },
     { id: "5",   nome: "5º ano", curto: "5º" },
+    { id: "6",   nome: "6º ano", curto: "6º" },
+    { id: "7",   nome: "7º ano", curto: "7º" },
+    { id: "8",   nome: "8º ano", curto: "8º" },
     { id: "9",   nome: "9º ano", curto: "9º" },
     { id: "em",  nome: "Ensino Médio", curto: "EM" },
     { id: "aee", nome: "AEE e Inclusão", curto: "AEE" }
@@ -106,6 +109,7 @@ window.LOJA = {
       { id: "folclore-brasileiro", nome: "Folclore Brasileiro" }
     ]},
     { id: "ciencias", nome: "Ciências", icone: "🔬", cor: "#00897b", sub: [] },
+    { id: "filosofia", nome: "Filosofia", icone: "💭", cor: "#6a1b9a", sub: [] },
     { id: "sequencias-didaticas", nome: "Sequências Didáticas", icone: "🧭", cor: "#5e35b1", sub: [] },
     { id: "avaliacoes-externas", nome: "Avaliações Externas (SIMAVE)", icone: "📝", cor: "#3949ab", sub: [
       { id: "simulado-lp", nome: "Simulados de Língua Portuguesa" },
@@ -856,5 +860,77 @@ window.PRODUTOS = [
     link_kiwify: "https://pay.kiwify.com.br/DHAgE9p",
     destaque: false,
     novo: true
+  },
+  {
+      "id": "kit-revolucao-francesa",
+      "nome": "Kit Revolução Francesa",
+      "tipo": "kit",
+      "assuntos": [
+          "historia-geografia"
+      ],
+      "anos": [
+          "8"
+      ],
+      "data": null,
+      "preco": 9.9,
+      "paginas": 8,
+      "capa": "img/produtos/kit-revolucao-francesa/capa.jpg",
+      "previas": [
+          "img/produtos/kit-revolucao-francesa/p2.jpg",
+          "img/produtos/kit-revolucao-francesa/p3.jpg",
+          "img/produtos/kit-revolucao-francesa/p4.jpg",
+          "img/produtos/kit-revolucao-francesa/p6.jpg",
+          "img/produtos/kit-revolucao-francesa/p7.jpg"
+      ],
+      "descricao": "Sequência sobre a Revolução Francesa para o 8º ano, com textos curtos, análise de fonte histórica, atividades e gabarito.",
+      "itens": [
+          "Três leituras com interpretação",
+          "Análise da Declaração de 1789",
+          "Relacione as colunas",
+          "Complete as frases",
+          "Questões de reflexão",
+          "Gabarito"
+      ],
+      "amostra": "amostras/kit-revolucao-francesa.pdf",
+      "link_kiwify": "",
+      "em_breve": true,
+      "destaque": false,
+      "novo": true
+  },
+  {
+      "id": "kit-filosofia-antiga",
+      "nome": "Kit Filosofia Antiga",
+      "tipo": "kit",
+      "assuntos": [
+          "filosofia"
+      ],
+      "anos": [
+          "em"
+      ],
+      "data": null,
+      "preco": 9.9,
+      "paginas": 8,
+      "capa": "img/produtos/kit-filosofia-antiga/capa.jpg",
+      "previas": [
+          "img/produtos/kit-filosofia-antiga/p2.jpg",
+          "img/produtos/kit-filosofia-antiga/p3.jpg",
+          "img/produtos/kit-filosofia-antiga/p4.jpg",
+          "img/produtos/kit-filosofia-antiga/p6.jpg",
+          "img/produtos/kit-filosofia-antiga/p7.jpg"
+      ],
+      "descricao": "Introdução à filosofia antiga para o Ensino Médio, com textos curtos, questões de interpretação, atividade de relacionar e gabarito.",
+      "itens": [
+          "Do mito à filosofia",
+          "Sócrates",
+          "Platão e a Alegoria da Caverna",
+          "Aristóteles",
+          "Relacione as colunas",
+          "Questões de reflexão e gabarito"
+      ],
+      "amostra": "amostras/kit-filosofia-antiga.pdf",
+      "link_kiwify": "",
+      "em_breve": true,
+      "destaque": false,
+      "novo": true
   }
 ];

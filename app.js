@@ -67,7 +67,7 @@
     if (p.publico) return p.publico;
     var a = p.anos || [], partes = [];
     if (a.indexOf('aee') >= 0) partes.push('AEE');
-    var ordem = ['ei', '1', '2', '3', '4', '5'];
+    var ordem = ['ei', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     var idx = ordem.filter(function (x) { return a.indexOf(x) >= 0; }).map(function (x) { return ordem.indexOf(x); });
     if (idx.length) {
       var nome = function (i) { return i === 0 ? 'Ed. Infantil' : ordem[i] + 'º'; };
@@ -77,6 +77,7 @@
       else if (idx.length === 2) partes.push(nome(idx[0]) + ' e ' + nome(idx[1]) + ' ano');
       else partes.push(nome(idx[0]) + ' ao ' + nome(idx[idx.length - 1]) + ' ano');
     }
+    if (a.indexOf('em') >= 0) partes.push('Ensino Médio');
     return partes.join(' • ');
   }
 
