@@ -1,25 +1,26 @@
 /* Loja Prof. Luiz Atividades Pedagógicas: estilo de todas as páginas */
 :root {
-  --coral: #ff8a65;
-  --laranja: #ffb74d;
-  --botao: #e8561f;
-  --botao-hover: #cf4412;
-  --azul: #1e88e5;
-  --verde: #2e7d32;
-  --vermelho: #e53935;
-  --whats: #1f9d55;
-  --tinta: #1f2430;
-  --cinza: #4b5563;
-  --cinza-claro: #6b7280;
-  --linha: #ece5dc;
-  --creme: #fff3e0;
-  --ceu: #e1f5fe;
-  --fundo: #fffaf4;
-  --sombra: 0 8px 24px rgba(31, 36, 48, .08), 0 2px 6px rgba(31, 36, 48, .05);
-  --sombra-forte: 0 22px 50px rgba(31, 36, 48, .18), 0 3px 8px rgba(31, 36, 48, .08);
-  --raio: 18px;
-  --titulo: 'Fredoka', system-ui, sans-serif;
-  --texto: 'Andika', system-ui, sans-serif;
+  --coral: #1f5c63;
+  --laranja: #e9b872;
+  --botao: #b93e0c;
+  --botao-hover: #973207;
+  --azul: #1f5c63;
+  --verde: #2c6e49;
+  --vermelho: #b3261e;
+  --whats: #1b7a47;
+  --tinta: #12343b;
+  --cinza: #47565a;
+  --cinza-claro: #63716f;
+  --linha: #e3ded3;
+  --creme: #f1ece2;
+  --ceu: #e7efee;
+  --fundo: #f8f6f1;
+  --sombra: 0 1px 2px rgba(18, 52, 59, .05);
+  --sombra-forte: 0 14px 34px rgba(18, 52, 59, .14), 0 2px 6px rgba(18, 52, 59, .06);
+  --raio: 10px;
+  --titulo: 'Figtree', system-ui, sans-serif;
+  --editorial: 'Source Serif 4', Georgia, serif;
+  --texto: 'Figtree', system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -549,3 +550,72 @@ svg.ic { width: 1.1em; height: 1.1em; flex: none; }
   .abertura .atalhos { display: none; }
   .kicker { font-size: 13px; }
 }
+
+/* ---------- Visual editorial ---------- */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+h1, h2, h3, .marca b, .dcard b, .tile b { font-family: var(--editorial); font-weight: 600; letter-spacing: -.012em; text-wrap: balance; }
+p { text-wrap: pretty; }
+.preco, .contagem { font-variant-numeric: tabular-nums; }
+.btn { border-radius: 8px; font-weight: 600; transition: background-color .15s ease-out, border-color .15s ease-out, transform .1s ease-out; }
+.btn:hover { transform: none; }
+.btn:active { transform: scale(.97); }
+.btn-comprar, .btn-whats { box-shadow: none; }
+.btn-contorno { border-width: 1px; border-color: #c9c3b6; }
+.faixa-topo { background: var(--tinta); font-size: 13.5px; }
+.faixa-topo svg { color: var(--laranja); }
+.marca img { border-radius: 8px; box-shadow: none; }
+.marca small { font-weight: 500; }
+.busca input { border-width: 1px; border-radius: 8px; border-color: #d6d0c4; background: #fff; }
+.busca input:focus { border-color: var(--tinta); }
+.busca button { border-radius: 6px; background: var(--tinta); }
+.bt-menu { border-radius: 8px; }
+.bt-canal { background: #fff; color: var(--whats); border: 1px solid #c9c3b6; }
+.bt-canal:hover { background: var(--fundo); border-color: var(--whats); }
+.menu > li > a, .menu > li > button { text-transform: none; letter-spacing: 0; font-size: 16px; font-weight: 600; }
+.menu > li > a:hover, .menu > li > button:hover, .menu > li.aberto > button { color: var(--tinta); }
+.menu > li > a[aria-current="page"], .menu > li > button.atual { border-bottom-color: var(--tinta); border-bottom-width: 2px; }
+.sub { border-radius: 0 0 10px 10px; }
+.sub a { font-weight: 500; border-radius: 6px; }
+.sub a em { background: var(--tinta); }
+.abertura { background: var(--fundo); border-bottom: 1px solid var(--linha); padding: 56px 0; }
+.kicker { background: none; color: var(--cinza); padding: 0; font-size: 15px; font-weight: 600; letter-spacing: 0; text-transform: none; }
+.abertura h1 { font-size: clamp(36px, 4.4vw, 54px); line-height: 1.08; }
+.abertura h1 .l, .abertura h1 .a { color: inherit; }
+.leque .pg { border-radius: 4px; outline: 1px solid rgba(0, 0, 0, .08); outline-offset: -1px; }
+.leque .p1 { transform: rotate(-4deg); }
+.leque .p3 { transform: rotate(4deg); }
+.campanha { background: #fff; border: 1px solid var(--linha); border-radius: var(--raio); box-shadow: none; }
+.emo { display: none; }
+.chip { border-radius: 6px; font-weight: 500; font-size: 15px; background: transparent; border-color: #cfc9bc; }
+.chip:hover { border-color: var(--tinta); background: #fff; }
+.chip.marcado { background: var(--tinta); border-color: var(--tinta); color: #fff; }
+.tile-ic { display: none; }
+.tile small { padding-left: 0; margin-top: 0; font-weight: 500; }
+.tile:hover { transform: none; border-color: var(--tinta); }
+.rotulo { letter-spacing: 0; text-transform: none; font-size: 15px; color: var(--cinza); }
+.link-seta { color: var(--tinta); }
+.abas [role=tab] { border-width: 1px; border-radius: 8px; font-size: 16.5px; }
+.abas [role=tab][aria-selected=true] small { color: var(--laranja); }
+.painel-info { background: #fff; border: 1px solid var(--linha); }
+.contagem { color: var(--tinta); background: var(--creme); box-shadow: none; border-radius: 6px; }
+.card:hover, .dcard:hover { transform: none; box-shadow: var(--sombra-forte); }
+.card-capa img, .dcard-img img { outline: 1px solid rgba(0, 0, 0, .06); outline-offset: -1px; }
+.card h3 { font-size: 20px; }
+.card h3 a:hover { color: var(--azul); }
+.card-tipo { letter-spacing: 0; text-transform: none; font-size: 13.5px; font-weight: 600; }
+.card-anos, .dcard-meta { font-weight: 500; }
+.card-amostra { color: var(--azul); }
+.card-itens svg { color: var(--verde); }
+.dcard-quando { color: var(--cinza); }
+.etq { border-radius: 5px; font-weight: 600; }
+.etq svg { color: var(--tinta); }
+.etq.quente { background: var(--tinta); }
+.etq-novo { background: var(--verde); }
+.etq-tipo { color: var(--tinta); }
+.chip-ativo { background: var(--creme); border-color: #cfc9bc; }
+.passo { background: #fff; padding: 24px; }
+.passo .num, .passo:nth-child(1) .num, .passo:nth-child(2) .num, .passo:nth-child(3) .num { width: auto; height: auto; display: block; margin-bottom: 10px; background: none; box-shadow: none; color: var(--cinza-claro); font-family: var(--editorial); font-size: 32px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.sobre { background: var(--tinta); border-radius: var(--raio); }
+.sobre img { width: 96px; height: 96px; border-radius: 8px; box-shadow: none; }
+.canal { background: #fff; border: 1px solid var(--linha); border-radius: var(--raio); }
+.preco-box .contagem { background: var(--creme); }

@@ -382,7 +382,7 @@
     if (dest) {
       var lista = P.filter(function (p) { return p.destaque; });
       if (!lista.length) lista = P.slice(-4);
-      dest.innerHTML = grade(lista.slice(0, 8));
+      dest.innerHTML = grade(lista.slice(0, 4));
     }
 
     // Assuntos
