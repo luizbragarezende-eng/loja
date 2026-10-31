@@ -105,17 +105,18 @@ window.LOJA = {
       { id: "cultura-afro-brasileira", nome: "Cultura Afro-brasileira" },
       { id: "folclore-brasileiro", nome: "Folclore Brasileiro" }
     ]},
+    { id: "ciencias", nome: "Ciências", icone: "🔬", cor: "#00897b", sub: [] },
+    { id: "sequencias-didaticas", nome: "Sequências Didáticas", icone: "🧭", cor: "#5e35b1", sub: [] },
     { id: "avaliacoes-externas", nome: "Avaliações Externas (SIMAVE)", icone: "📝", cor: "#3949ab", sub: [
       { id: "simulado-lp", nome: "Simulados de Língua Portuguesa" },
       { id: "simulado-mt", nome: "Simulados de Matemática" }
-    ]},
-    { id: "ciencias", nome: "Ciências", icone: "🔬", cor: "#00897b", sub: [] },
-    { id: "sequencias-didaticas", nome: "Sequências Didáticas", icone: "🧭", cor: "#5e35b1", sub: [] }
+    ]}
   ],
 
   /* Calendário das datas comemorativas.
        dia          Dia da data (DD/MM) para a contagem "Faltam X dias", ou null.
        quando       Texto curto da data.
+       discreta     true = não aparece nos blocos da página inicial.
        destaqueDe / destaqueAte   Janela (DD/MM) em que a data aparece em
                     "Temas para trabalhar agora" na página inicial.
      Data sem nenhum produto fica escondida automaticamente. */
@@ -130,7 +131,7 @@ window.LOJA = {
     { id: "folclore",            nome: "Folclore",                dia: "22/08", quando: "22 de agosto",    destaqueDe: "01/08", destaqueAte: "20/08" },
     { id: "independencia",       nome: "Independência do Brasil", dia: "07/09", quando: "7 de setembro",   destaqueDe: "20/08", destaqueAte: "05/09" },
     { id: "dia-dos-animais",     nome: "Dia dos Animais",         dia: "04/10", quando: "4 de outubro",    destaqueDe: "20/09", destaqueAte: "03/10" },
-    { id: "avaliacao-somativa",  nome: "Avaliação Somativa (SIMAVE)", dia: "19/10", quando: "19 a 30 de outubro", destaqueDe: "20/09", destaqueAte: "17/10" },
+    { id: "avaliacao-somativa",  nome: "Avaliação Somativa (SIMAVE)", dia: "19/10", quando: "19 a 30 de outubro", destaqueDe: "20/09", destaqueAte: "17/10", discreta: true },
     { id: "dia-das-criancas",    nome: "Dia das Crianças",        dia: "12/10", quando: "12 de outubro",   destaqueDe: "29/09", destaqueAte: "08/10" },
     { id: "dia-do-professor",    nome: "Dia do Professor",        dia: "15/10", quando: "15 de outubro",   destaqueDe: "29/09", destaqueAte: "11/10" },
     { id: "dia-do-saci",         nome: "Dia do Saci e Halloween", dia: "31/10", quando: "31 de outubro",   destaqueDe: "13/10", destaqueAte: "29/10" },
@@ -632,7 +633,7 @@ window.PRODUTOS = [
     ],
     amostra: "amostras/simulado-simave-lp-5ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/n7p4EuM",
-    destaque: true,
+    destaque: false,
     novo: true
   },
   {
@@ -655,7 +656,7 @@ window.PRODUTOS = [
     ],
     amostra: "amostras/simulado-simave-mt-5ano.pdf",
     link_kiwify: "https://pay.kiwify.com.br/xd4KnhJ",
-    destaque: true,
+    destaque: false,
     novo: true
   },
   {
@@ -778,7 +779,7 @@ window.PRODUTOS = [
       "Economia de R$ 29,30 em relação aos avulsos"
     ],
     link_kiwify: "https://pay.kiwify.com.br/b0up1S0",
-    destaque: true,
+    destaque: false,
     novo: true
   },
   {

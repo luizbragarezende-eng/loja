@@ -115,7 +115,7 @@
     return (x.inf.ateInicio - y.inf.ateInicio) || ((x.inf.ateDia == null ? 999 : x.inf.ateDia) - (y.inf.ateDia == null ? 999 : y.inf.ateDia));
   });
   var posData = {}; DATAS.forEach(function (x, i) { posData[x.d.id] = i; });
-  var AGORA = DATAS.filter(function (x) { return x.inf.ativa || x.inf.ateInicio <= 10; });
+  var AGORA = DATAS.filter(function (x) { return !x.d.discreta && (x.inf.ativa || x.inf.ateInicio <= 10); });
   if (!AGORA.length && DATAS.length) AGORA = [DATAS[0]];
   AGORA = AGORA.slice(0, 4);
   var idsAgora = {}; AGORA.forEach(function (x) { idsAgora[x.d.id] = true; });
@@ -247,11 +247,12 @@
       '<div class="rodape-escuro"><div class="container">' +
         '<div class="rod-marca">' +
           '<a class="marca" href="index.html"><img src="img/logo.png" width="48" height="48" alt=""><span><b>Prof. Luiz</b><small>Atividades Pedagógicas</small></span></a>' +
-          '<p>Materiais pedagógicos e simulados em PDF para imprimir, da Educação Infantil ao Ensino Médio. Pagamento e entrega pela Kiwify.</p>' +
+          '<p>Materiais pedagógicos em PDF para imprimir, da Educação Infantil ao Ensino Médio. Pagamento e entrega pela Kiwify.</p>' +
         '</div>' +
         '<div class="rod-col"><h2>Loja</h2>' +
           '<a href="loja.html">Todos os materiais</a>' +
           '<a href="categorias.html">Categorias</a>' +
+          '<a href="ficha-gratis/">Fichas grátis</a>' +
           (DATAS.length ? '<a href="' + linkLoja('data', DATAS[0].d.id) + '">' + esc(DATAS[0].d.nome) + '</a>' : '') +
           '<a href="index.html#duvidas">Dúvidas frequentes</a>' +
         '</div>' +
@@ -299,19 +300,6 @@
 
   /* ================= Página inicial ================= */
   function paginaInicio() {
-    var fx = $('#faixa-somativa'), cb = porId['combo-simave-escola'];
-    var ini = new Date(2026, 9, 19), fim = new Date(2026, 9, 30);
-    if (fx && cb && HOJE <= fim) {
-      var n = dias(HOJE, ini);
-      fx.innerHTML = '<div class="faixa-somativa">' +
-        '<div class="fs-texto"><span class="fs-etq">' + ic('calendario') + (n > 0 ? 'Faltam ' + plural(n, 'dia', 'dias') + ' para a Avaliação Somativa' : 'Avaliação Somativa acontecendo') + ' (19 a 30/10)</span>' +
-        '<h2>Simulados no estilo SIMAVE com gabarito comentado</h2>' +
-        '<p>Português e Matemática do 2º, 5º e 9º ano e do 3º ano do Ensino Médio, com questões por descritor e planilha da turma. Material independente, não oficial.</p>' +
-        '<div class="fs-botoes"><a class="btn btn-comprar" href="produto.html?id=combo-simave-escola">' + ic('sacola') + 'Pacote para a escola: ' + preco(cb.preco) + '</a>' +
-        '<a class="btn btn-contorno" href="' + linkLoja('assunto', 'avaliacoes-externas') + '">Ver simulados avulsos</a></div></div>' +
-        '<a class="fs-capa" href="produto.html?id=combo-simave-escola"><img src="' + esc(cb.capa) + '" alt="Pacote SIMAVE Escola" loading="lazy"></a></div>';
-      $('#sec-somativa').hidden = false;
-    }
     // Campanha do momento no primeiro bloco
     if (AGORA.length) {
       var cp = AGORA[0], kit = produtosDaData(cp.d.id)[0];
@@ -375,7 +363,7 @@
 
     // Prepare o que vem por aí
     var vem = $('#vem');
-    var proximas = DATAS.filter(function (x) { return !idsAgora[x.d.id]; }).slice(0, 4);
+    var proximas = DATAS.filter(function (x) { return !idsAgora[x.d.id] && !x.d.discreta; }).slice(0, 4);
     if (vem && proximas.length) {
       vem.innerHTML = proximas.map(function (x) {
         var p = produtosDaData(x.d.id)[0];

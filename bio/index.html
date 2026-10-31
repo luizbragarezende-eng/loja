@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prof. Luiz Atividades Pedagógicas</title>
+<meta name="description" content="Atividades prontas para imprimir, da Educação Infantil ao Ensino Médio, feitas por professor da escola pública.">
+<meta name="theme-color" content="#1f2430">
+<meta property="og:title" content="Prof. Luiz Atividades Pedagógicas">
+<meta property="og:description" content="Atividades prontas para imprimir, da Educação Infantil ao Ensino Médio.">
+<meta property="og:image" content="https://luizbragarezende-eng.github.io/loja/img/og.png">
+<link rel="canonical" href="https://luizbragarezende-eng.github.io/loja/bio/">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Andika:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--tinta:#1f2430;--cinza:#566072;--fundo:#f7f4ee;--cartao:#fff;--linha:#e4dfd5;--botao:#c9440f;--botao-hover:#a93709;--verde:#2e7d32}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Andika',sans-serif;font-size:17px;line-height:1.45;color:var(--tinta);background:var(--fundo)}
+h1,h2{font-family:'Fredoka',sans-serif;font-weight:600;line-height:1.12;margin:0}
+img{display:block;max-width:100%}
+a:focus-visible{outline:3px solid #1e88e5;outline-offset:2px}
+.faixa{height:6px;background:repeating-linear-gradient(90deg,#c62828 0 48px,#f9a825 48px 96px,#2e7d32 96px 144px,#00838f 144px 192px)}
+main{max-width:480px;margin:0 auto;padding:30px 16px 24px}
+.marca{text-align:center}
+.marca img{width:92px;height:92px;border-radius:50%;margin:0 auto 12px;box-shadow:0 0 0 3px #fff,0 6px 16px rgba(31,36,48,.16)}
+h1{font-size:27px}
+.marca p{margin:8px auto 0;max-width:360px;color:var(--cinza)}
+.campanha{display:block;margin-top:24px;background:var(--cartao);border:1px solid var(--linha);border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(31,36,48,.08)}
+.campanha img{width:100%;height:190px;object-fit:cover;object-position:top;border-bottom:1px solid var(--linha)}
+.campanha div{padding:16px}
+.rotulo{display:block;font-family:'Fredoka',sans-serif;font-weight:500;font-size:15px;color:var(--verde)}
+.campanha h2{font-size:23px;margin-top:3px}
+.campanha p{margin:6px 0 14px;color:var(--cinza);font-size:16px}
+.btn{display:flex;align-items:center;justify-content:center;min-height:52px;padding:12px 16px;border-radius:12px;background:var(--botao);color:#fff;font-family:'Fredoka',sans-serif;font-weight:500;font-size:19px;text-decoration:none;text-align:center}
+.btn:hover{background:var(--botao-hover)}
+.links{display:grid;gap:10px;margin-top:14px}
+.link{display:block;padding:14px 16px;background:var(--cartao);border:1px solid var(--linha);border-radius:12px;color:var(--tinta);text-decoration:none}
+.link:hover{border-color:var(--tinta)}
+.link b{display:block;font-family:'Fredoka',sans-serif;font-weight:500;font-size:18px}
+.link span{color:var(--cinza);font-size:15px}
+footer{text-align:center;color:var(--cinza);font-size:14px;padding:6px 16px 28px}
+</style>
+</head>
+<body>
+<div class="faixa"></div>
+<main>
+  <section class="marca">
+    <img src="../img/logo.png" width="92" height="92" alt="Logo do Prof. Luiz">
+    <h1>Prof. Luiz Atividades Pedagógicas</h1>
+    <p>Atividades prontas para imprimir, feitas por professor da escola pública.</p>
+  </section>
+
+  <section class="campanha" id="campanha" hidden>
+    <img id="c-img" alt="">
+    <div>
+      <span class="rotulo" id="c-rotulo"></span>
+      <h2 id="c-nome"></h2>
+      <p id="c-texto"></p>
+      <a class="btn" id="c-link"></a>
+    </div>
+  </section>
+
+  <nav class="links" aria-label="Links">
+    <a class="link" href="../loja.html"><b>Todas as atividades</b><span>Veja as páginas antes de comprar</span></a>
+    <a class="link" href="../ficha-gratis/"><b>Fichas grátis</b><span>Da Educação Infantil ao Ensino Médio</span></a>
+    <a class="link" href="https://whatsapp.com/channel/0029Vb8o31B8fewl8BBT7V2B" target="_blank" rel="noopener"><b>Canal do WhatsApp</b><span>Avisos de materiais novos</span></a>
+  </nav>
+</main>
+<footer>Pix, cartão ou boleto. Acesso por e-mail pela Kiwify.</footer>
+<script>
+// Campanhas em ordem: cada uma aparece até o dia "ate".
+var CAMPANHAS = [
+  { ate: '2026-11-19', rotulo: 'Para o 20 de novembro', nome: 'Kit Consciência Negra', texto: '15 páginas para o 1º ao 5º ano. Veja a amostra antes de comprar.', img: '../img/produtos/kit-consciencia-negra/p12.jpg', link: '../amostra-consciencia-negra/', botao: 'Ver amostra grátis' },
+  { ate: '2026-12-20', rotulo: 'Para fechar o ano', nome: 'Kit Fim de Ano', texto: 'Material pronto para imprimir e usar com a turma.', img: '../img/produtos/kit-fim-de-ano/capa.jpg', link: '../produto.html?id=kit-fim-de-ano', botao: 'Ver o kit' }
+];
+var hoje = new Date(), d = hoje.getFullYear() + '-' + ('0' + (hoje.getMonth() + 1)).slice(-2) + '-' + ('0' + hoje.getDate()).slice(-2);
+var c = CAMPANHAS.filter(function (x) { return d <= x.ate; })[0];
+if (c) {
+  document.getElementById('c-img').src = c.img;
+  document.getElementById('c-rotulo').textContent = c.rotulo;
+  document.getElementById('c-nome').textContent = c.nome;
+  document.getElementById('c-texto').textContent = c.texto;
+  var a = document.getElementById('c-link');
+  a.href = c.link;
+  a.textContent = c.botao;
+  document.getElementById('campanha').hidden = false;
+}
+</script>
+</body>
+</html>
